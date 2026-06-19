@@ -1,0 +1,35 @@
+{
+  "name": "kubasejdak python:3.14-26.04",
+  "image": "kubasejdak/python:3.14-26.04",
+  "workspaceFolder": "/workspaces",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/workspace,type=bind,consistency=cached",
+  "mounts": [
+    "source=${localEnv:HOME}/.gitconfig,target=/home/ubuntu/.gitconfig,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.ssh,target=/home/ubuntu/.ssh,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/projects/kubasejdak/tools/binary-run-action,target=/workspaces/binary-run-action,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/projects/kubasejdak/tools/clang-format-run-action,target=/workspaces/clang-format-run-action,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/projects/kubasejdak/tools/clang-tidy-run-action,target=/workspaces/clang-tidy-run-action,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/projects/kubasejdak/tools/cmake-build-preset-action,target=/workspaces/cmake-build-preset-action,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/projects/kubasejdak/tools/cpp-coverage-check-action,target=/workspaces/cpp-coverage-check-action,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/projects/kubasejdak/tools/docker-action,target=/workspaces/docker-action,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/projects/kubasejdak/tools/mkdocs-publish-action,target=/workspaces/mkdocs-publish-action,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/projects/kubasejdak/tools/openocd-run-action,target=/workspaces/openocd-run-action,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/projects/kubasejdak/tools/valgrind-run-action,target=/workspaces/valgrind-run-action,type=bind,consistency=cached"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "charliermarsh.ruff",
+        "davidanson.vscode-markdownlint",
+        "esbenp.prettier-vscode",
+        "hediet.vscode-drawio",
+        "mads-hartmann.bash-ide-vscode",
+        "ms-python.python",
+        "ms-vsliveshare.vsliveshare",
+        "waderyan.gitblame",
+        "yzhang.markdown-all-in-one"
+      ]
+    }
+  },
+  "runArgs": ["--network=host"]
+}
