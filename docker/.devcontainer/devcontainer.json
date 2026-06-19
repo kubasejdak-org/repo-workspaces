@@ -1,0 +1,31 @@
+{
+  "name": "kubasejdak python:3.14-26.04",
+  "image": "kubasejdak/python:3.14-26.04",
+  "workspaceFolder": "/docker",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/docker/workspace,type=bind,consistency=cached",
+  "mounts": [
+    "source=${localEnv:HOME}/.gitconfig,target=/home/ubuntu/.gitconfig,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.ssh,target=/home/ubuntu/.ssh,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/projects/kubasejdak/tools/docker-cpp,target=/docker/docker-cpp,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/projects/kubasejdak/tools/docker-js,target=/docker/docker-js,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/projects/kubasejdak/tools/docker-python,target=/docker/docker-python,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/projects/kubasejdak/tools/docker-tests,target=/docker/docker-tests,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/projects/kubasejdak/tools/docker-tools,target=/docker/docker-tools,type=bind,consistency=cached"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "charliermarsh.ruff",
+        "davidanson.vscode-markdownlint",
+        "esbenp.prettier-vscode",
+        "hediet.vscode-drawio",
+        "mads-hartmann.bash-ide-vscode",
+        "ms-python.python",
+        "ms-vsliveshare.vsliveshare",
+        "waderyan.gitblame",
+        "yzhang.markdown-all-in-one"
+      ]
+    }
+  },
+  "runArgs": ["--network=host"]
+}
