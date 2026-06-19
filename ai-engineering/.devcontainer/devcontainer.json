@@ -1,0 +1,28 @@
+{
+  "name": "kubasejdak python:3.14-26.04",
+  "image": "kubasejdak/python:3.14-26.04",
+  "workspaceFolder": "/workspaces",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/workspace,type=bind,consistency=cached",
+  "mounts": [
+    "source=${localEnv:HOME}/.gitconfig,target=/home/ubuntu/.gitconfig,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.ssh,target=/home/ubuntu/.ssh,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/projects/kubasejdak/tools/dotfiles-ai,target=/workspaces/dotfiles-ai,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/projects/kubasejdak/tools/trumpf-ai,target=/workspaces/trumpf-ai,type=bind,consistency=cached"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "charliermarsh.ruff",
+        "davidanson.vscode-markdownlint",
+        "esbenp.prettier-vscode",
+        "hediet.vscode-drawio",
+        "mads-hartmann.bash-ide-vscode",
+        "ms-python.python",
+        "ms-vsliveshare.vsliveshare",
+        "waderyan.gitblame",
+        "yzhang.markdown-all-in-one"
+      ]
+    }
+  },
+  "runArgs": ["--network=host"]
+}
