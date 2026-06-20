@@ -4,7 +4,7 @@
   "workspaceFolder": "/github-actions",
   "workspaceMount": "source=${localWorkspaceFolder},target=/github-actions/workspace,type=bind,consistency=cached",
   "mounts": [
-    "source=${localEnv:HOME}/.gitconfig,target=/home/ubuntu/.gitconfig,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.gitconsfig,target=/home/ubuntu/.gitconfig,type=bind,consistency=cached",
     "source=${localEnv:HOME}/.ssh,target=/home/ubuntu/.ssh,type=bind,consistency=cached",
     "source=${localEnv:HOME}/projects/kubasejdak/tools/binary-run-action,target=/github-actions/binary-run-action,type=bind,consistency=cached",
     "source=${localEnv:HOME}/projects/kubasejdak/tools/clang-format-run-action,target=/github-actions/clang-format-run-action,type=bind,consistency=cached",
