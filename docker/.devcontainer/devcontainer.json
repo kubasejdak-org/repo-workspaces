@@ -5,6 +5,7 @@
   "workspaceMount": "source=${localWorkspaceFolder},target=/docker/workspace,type=bind,consistency=cached",
   "mounts": [
     "source=${localEnv:HOME}/.gitconfig,target=/home/ubuntu/.gitconfig,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.gitconfig-private,target=/home/ubuntu/.gitconfig-private,type=bind,consistency=cached",
     "source=${localEnv:HOME}/.ssh,target=/home/ubuntu/.ssh,type=bind,consistency=cached",
     "source=${localEnv:HOME}/projects/kubasejdak/tools/docker-cpp,target=/docker/docker-cpp,type=bind,consistency=cached",
     "source=${localEnv:HOME}/projects/kubasejdak/tools/docker-js,target=/docker/docker-js,type=bind,consistency=cached",
