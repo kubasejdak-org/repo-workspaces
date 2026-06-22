@@ -1,14 +1,20 @@
 {
   "name": "kubasejdak gcc:15-26.04",
   "image": "kubasejdak/gcc:15-26.04",
+  "workspaceFolder": "/cpp-libs",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/cpp-libs/workspace,type=bind,consistency=cached",
   "mounts": [
     "source=${localEnv:HOME}/.gitconfig,target=/home/ubuntu/.gitconfig,type=bind,consistency=cached",
     "source=${localEnv:HOME}/.gitconfig-private,target=/home/ubuntu/.gitconfig-private,type=bind,consistency=cached",
-    "source=${localEnv:HOME}/.ssh,target=/home/ubuntu/.ssh,type=bind,consistency=cached"
+    "source=${localEnv:HOME}/.ssh,target=/home/ubuntu/.ssh,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/projects/kubasejdak/libs/cpp/osal,target=/cpp-libs/osal,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/projects/kubasejdak/libs/cpp/platform,target=/cpp-libs/platform,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/projects/kubasejdak/libs/cpp/utils,target=/cpp-libs/utils,type=bind,consistency=cached"
   ],
   "customizations": {
     "vscode": {
       "extensions": [
+        "davidanson.vscode-markdownlint",
         "esbenp.prettier-vscode",
         "hediet.vscode-drawio",
         "mads-hartmann.bash-ide-vscode",
