@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "path": ".",
+    },
+    {
+      "path": "/repos/osal",
+    },
+    {
+      "path": "/repos/platform",
+    },
+    {
+      "path": "/repos/utils",
+    },
+  ],
+}
