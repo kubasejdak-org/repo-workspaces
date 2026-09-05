@@ -1,0 +1,34 @@
+{
+  "folders": [
+    {
+      "path": ".",
+    },
+    {
+      "path": "/repos/binary-run-action",
+    },
+    {
+      "path": "/repos/clang-format-run-action",
+    },
+    {
+      "path": "/repos/clang-tidy-run-action",
+    },
+    {
+      "path": "/repos/cmake-build-preset-action",
+    },
+    {
+      "path": "/repos/cpp-coverage-check-action",
+    },
+    {
+      "path": "/repos/docker-action",
+    },
+    {
+      "path": "/repos/mkdocs-publish-action",
+    },
+    {
+      "path": "/repos/openocd-run-action",
+    },
+    {
+      "path": "/repos/valgrind-run-action",
+    },
+  ],
+}

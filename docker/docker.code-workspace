@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "path": ".",
+    },
+    {
+      "path": "/repos/docker-cpp",
+    },
+    {
+      "path": "/repos/docker-js",
+    },
+    {
+      "path": "/repos/docker-python",
+    },
+    {
+      "path": "/repos/docker-tests",
+    },
+    {
+      "path": "/repos/docker-tools",
+    },
+  ],
+}
